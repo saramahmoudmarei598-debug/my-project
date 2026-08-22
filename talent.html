@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gifted Programs</title>
+    <style>
+        body {
+            /* تدرج احترافي باللون البنفسجي */
+            background: radial-gradient(circle at top left, #2e1a47 20%, #4a2574 50%, #7b4397 100%);
+            margin: 0;
+            padding: 20px;
+            font-family: sans-serif;
+            min-height: 100vh;
+        }
+
+        .site-title {
+            text-align: center;
+            font-style: italic;
+            /* لون ذهبي/أصفر هادئ يتناسق جداً مع البنفسجي */
+            color: #ffd700; 
+            font-size: 40px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* حاوية الجريد (الشبكة) */
+        .the-site {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* كروت البرامج باللون البنفسجي الفاتح والمريح للعين */
+        .section-card {
+            border-radius: 20px;
+            border: #7b4397 solid 2px;
+            padding: 20px;
+            background-color: #f3e5f5; /* بنفسجي فاتح جداً مائل للأبيض لتوضيح النص */
+            height: 250px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s;
+            margin: 15px;
+
+        }
+
+        /* تأثير خفيف عند مرور الماوس فوق الكرت */
+        .section-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(153, 50, 204, 0.4);
+
+        }
+
+        .section-img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 0px;
+        }
+
+        .section-h1 {
+            text-align: center;
+            color: #4a2574; /* بنفسجي غامق للنصوص داخل الكرت */
+            font-family: cursive;
+            margin: 0;
+            font-size: 29px;
+            margin-top: 20px;
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-bottom: 30px;
+        }
+
+        /* التوافق مع الشاشات المختلفة */
+        @media (max-width: 1024px) {
+            .the-site { grid-template-columns: repeat(3, 1fr); }
+        }
+        @media (max-width: 768px) {
+            .the-site { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 480px) {
+            .the-site { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="Gifted-Programs">
+        <h1 class="site-title">قسم الموهوبين</h1>
+        
+        <div class="the-site">
+            <div class="section-card">
+                <img class="section-img" src="IMG/gifited.png" alt="Star">
+                <h1 class="section-h1">الرسم</h1>
+            </div>
+            <div class="section-card">
+                <img class="section-img" src="IMG/gifited.png" alt="Star">
+                <h1 class="section-h1">الكتابة</h1>
+            </div>
+            <div class="section-card">
+                <img class="section-img" src="IMG/gifited.png" alt="Star">
+                <h1 class="section-h1">الشعر</h1>
+            </div>
+            <div class="section-card">
+                <img class="section-img" src="IMG/gifited.png" alt="Star">
+                <h1 class="section-h1">الغناء</h1>
+            </div>
+            <div class="section-card">
+                <img class="section-img" src="IMG/gifited.png" alt="Star">
+                <h1 class="section-h1">التمثيل</h1>
+            </div>
+            <div class="section-card">
+                <img class="section-img" src="IMG/gifited.png" alt="Star">
+                <h1 class="section-h1">الخياطة</h1>
+            </div>
+            <div class="section-card">
+                <img class="section-img" src="IMG/gifited.png" alt="Star">
+                <h1 class="section-h1">الاختراع</h1>
+            </div>
+            <div class="section-card">
+                <img class="section-img" src="IMG/gifited.png" alt="Star">
+                <h1 class="section-h1">التصميم</h1>
+            </div>
+            <div class="section-card">
+                <img class="section-img" src="IMG/gifited.png" alt="Star">
+                <h1 class="section-h1">التصوير</h1>
+            </div>
+            <div class="section-card">
+                <img class="section-img" src="IMG/gifited.png" alt="Star">
+                <h1 class="section-h1">الرياضة</h1>
+            </div>
+            <div class="section-card">
+                <img class="section-img" src="IMG/gifited.png" alt="Star">
+                <h1 class="section-h1">النحت</h1>
+            </div>
+            <div class="section-card">
+                <img class="section-img" src="IMG/gifited.png" alt="Star">
+                <h1 class="section-h1">القيادة</h1>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
